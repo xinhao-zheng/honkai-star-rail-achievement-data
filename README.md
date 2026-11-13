@@ -1,13 +1,13 @@
 # honkai-star-rail-achievement-data
 
 A bilingual, formula-driven achievement register for *Honkai: Star Rail*
-versions 4.4, 4.5, and 4.6. The 4.6 release consolidates 1,950 source IDs into
-1,885 countable rows; the 4.4 and 4.5 workbooks remain unchanged. Mutually exclusive
+versions 4.4, 4.5, 4.6, and 4.7. The 4.7 release consolidates 1,993 source IDs into
+1,928 countable rows; the 4.4, 4.5, and 4.6 workbooks remain unchanged. Mutually exclusive
 outcomes share one row, while completion and Stellar Jade remain formula-bound.
 The register tracks progress; it is not an official game database.
 
-《崩坏：星穹铁道》4.4、4.5 与 4.6 版双语成就登记册。4.6 版将 1,950 个源 ID
-合并为 1,885 个可计数行，并原样保留 4.4 与 4.5 工作簿。互斥结果共用一行，完成进度
+《崩坏：星穹铁道》4.4、4.5、4.6 与 4.7 版双语成就登记册。4.7 版将 1,993 个源 ID
+合并为 1,928 个可计数行，并原样保留 4.4、4.5 与 4.6 工作簿。互斥结果共用一行，完成进度
 与星琼统计由公式约束。本项目用于记录进度，并非官方游戏数据库。
 
 ---
@@ -21,12 +21,15 @@ The register tracks progress; it is not an official game database.
 ├── hsr-achievement-register_en_v4.4.xlsx
 ├── hsr-achievement-register_en_v4.5.xlsx
 ├── hsr-achievement-register_en_v4.6.xlsx
+├── hsr-achievement-register_en_v4.7.xlsx
 ├── hsr-achievement-register_zh_v4.4.xlsx
 ├── hsr-achievement-register_zh_v4.5.xlsx
 ├── hsr-achievement-register_zh_v4.6.xlsx
+├── hsr-achievement-register_zh_v4.7.xlsx
 ├── stardb-achievements_en_20260727.json
 ├── stardb-achievements_en_20260826.json
-└── stardb-achievements_en_20260929.json
+├── stardb-achievements_en_20260929.json
+└── stardb-achievements_en_20261113.json
 ```
 
 | Path | Role |
@@ -34,24 +37,27 @@ The register tracks progress; it is not an official game database.
 | `hsr-achievement-register_en_v4.4.xlsx` | unchanged English 4.4 release · 原样保留的英文 4.4 版 |
 | `hsr-achievement-register_en_v4.5.xlsx` | English 4.5 baseline; every status starts as `Not completed` · 英文 4.5 基准表 |
 | `hsr-achievement-register_en_v4.6.xlsx` | English 4.6 baseline; every status starts as `Not completed` · 英文 4.6 基准表 |
+| `hsr-achievement-register_en_v4.7.xlsx` | English 4.7 baseline; every status starts as `Not completed` · 英文 4.7 基准表 |
 | `hsr-achievement-register_zh_v4.4.xlsx` | unchanged Chinese 4.4 release · 原样保留的中文 4.4 版 |
 | `hsr-achievement-register_zh_v4.5.xlsx` | Chinese 4.5 baseline; every status starts as `未完成` · 中文 4.5 基准表 |
 | `hsr-achievement-register_zh_v4.6.xlsx` | Chinese 4.6 baseline; every status starts as `未完成` · 中文 4.6 基准表 |
+| `hsr-achievement-register_zh_v4.7.xlsx` | Chinese 4.7 baseline; every status starts as `未完成` · 中文 4.7 基准表 |
 | `stardb-achievements_en_20260727.json` | unmodified StarDB English API response for the 4.4 release · 4.4 版 StarDB 英文 API 原始响应 |
 | `stardb-achievements_en_20260826.json` | unmodified StarDB English API response for the 4.5 release · 4.5 版 StarDB 英文 API 原始响应 |
 | `stardb-achievements_en_20260929.json` | unmodified StarDB English API response for the 4.6 release · 4.6 版 StarDB 英文 API 原始响应 |
+| `stardb-achievements_en_20261113.json` | unmodified StarDB English API response for the 4.7 release · 4.7 版 StarDB 英文 API 原始响应 |
 
 ---
 
 ## Dataset | 数据集
 
-| Measure | 4.4 | 4.5 | 4.6 | Rule |
-|---------|----:|----:|----:|------|
-| Countable rows · 可计数行 | 1,806 | 1,858 | 1,885 | one row per achievement or mutually exclusive outcome group · 单项成就或一组互斥结果计为一行 |
-| Source IDs · 源 ID | 1,869 | 1,921 | 1,950 | raw records before consolidation · 合并前的原始记录 |
-| Alternative groups · 互斥组 | 50 | 50 | 51 | 38 two-way, one four-way; three-way groups increase from 11 to 12 in 4.6 · 38 组二选一、1 组四选一；4.6 三选一由 11 组增至 12 组 |
-| Total Stellar Jade · 总星琼 | 10,685 | 10,995 | 11,155 | live formula in each workbook · 每份工作簿均由公式计算 |
-| Snapshot date · 快照日期 | 2026-07-27 | 2026-08-26 | 2026-09-29 | date of the archived StarDB response · StarDB 原始响应的归档日期 |
+| Measure | 4.4 | 4.5 | 4.6 | 4.7 | Rule |
+|---------|----:|----:|----:|----:|------|
+| Countable rows · 可计数行 | 1,806 | 1,858 | 1,885 | 1,928 | one row per achievement or mutually exclusive outcome group · 单项成就或一组互斥结果计为一行 |
+| Source IDs · 源 ID | 1,869 | 1,921 | 1,950 | 1,993 | raw records before consolidation · 合并前的原始记录 |
+| Alternative groups · 互斥组 | 50 | 50 | 51 | 51 | 38 two-way, one four-way; three-way groups increase from 11 to 12 in 4.6 and remain unchanged in 4.7 · 38 组二选一、1 组四选一；4.6 三选一由 11 组增至 12 组，4.7 不变 |
+| Total Stellar Jade · 总星琼 | 10,685 | 10,995 | 11,155 | 11,430 | live formula in each workbook · 每份工作簿均由公式计算 |
+| Snapshot date · 快照日期 | 2026-07-27 | 2026-08-26 | 2026-09-29 | 2026-11-13 | date of the archived StarDB response · StarDB 原始响应的归档日期 |
 
 ---
 
@@ -65,6 +71,8 @@ The register tracks progress; it is not an official game database.
 | 4.5 client data · 4.5 客户端数据 | [AchievementData](https://github.com/DimbreathBot/TurnBasedGameData/blob/768daeb9d791dbe4854dcfe2bc0b1335a87f8722/ExcelOutput/AchievementData.json) · [TextMapCHS](https://github.com/DimbreathBot/TurnBasedGameData/blob/768daeb9d791dbe4854dcfe2bc0b1335a87f8722/TextMap/TextMapCHS.json) · [TextMapEN](https://github.com/DimbreathBot/TurnBasedGameData/blob/768daeb9d791dbe4854dcfe2bc0b1335a87f8722/TextMap/TextMapEN.json) · [QuestData](https://github.com/DimbreathBot/TurnBasedGameData/blob/768daeb9d791dbe4854dcfe2bc0b1335a87f8722/ExcelOutput/QuestData.json) · [RewardData](https://github.com/DimbreathBot/TurnBasedGameData/blob/768daeb9d791dbe4854dcfe2bc0b1335a87f8722/ExcelOutput/RewardData.json) | Chinese text and auditable order for the 52 additions in 4.5; reward cross-check · 4.5 新增 52 条记录的中文文本、可审计排序与奖励核对 |
 | 4.6 Chinese text · 4.6 中文文本 | [StarRailRes CN](https://github.com/Mar-7th/StarRailRes/blob/541e1100dcfe9a299c6bd500c6d3c4115e0451e4/index_new/cn/achievements.json) | Chinese text for the 29 additions in 4.6 · 4.6 新增 29 条记录的中文文本 |
 | 4.6 client data · 4.6 客户端数据 | [AchievementData](https://github.com/DimbreathBot/TurnBasedGameData/blob/6b2bc17ebf461e497ba0dd0ffd44875f1866762b/ExcelOutput/AchievementData.json) · [QuestData](https://github.com/DimbreathBot/TurnBasedGameData/blob/6b2bc17ebf461e497ba0dd0ffd44875f1866762b/ExcelOutput/QuestData.json) · [RewardData](https://github.com/DimbreathBot/TurnBasedGameData/blob/6b2bc17ebf461e497ba0dd0ffd44875f1866762b/ExcelOutput/RewardData.json) · [FinishWay](https://github.com/DimbreathBot/TurnBasedGameData/blob/6b2bc17ebf461e497ba0dd0ffd44875f1866762b/ExcelOutput/FinishWay.json) | auditable order and reward cross-check for the 29 additions in 4.6; inherited choice-group cross-check · 4.6 新增 29 条记录的可审计排序与奖励核对；既有互斥组核对 |
+| 4.7 text · 4.7 文本 | [StarRailRes CN](https://github.com/Mar-7th/StarRailRes/blob/03907e798b46f9eb109a1f882055cdf49ce3d374/index_new/cn/achievements.json) · [StarRailRes EN](https://github.com/Mar-7th/StarRailRes/blob/03907e798b46f9eb109a1f882055cdf49ce3d374/index_new/en/achievements.json) | Chinese text for the 43 additions in 4.7; cross-check of the corrected English condition for ID 4035503 · 4.7 新增 43 条记录的中文文本；核对 ID 4035503 的英文条件修正 |
+| 4.7 client data · 4.7 客户端数据 | [AchievementData](https://github.com/DimbreathBot/TurnBasedGameData/blob/dfdfe3337bcfa14f000074d2dae7058118193ea6/ExcelOutput/AchievementData.json) · [QuestData](https://github.com/DimbreathBot/TurnBasedGameData/blob/dfdfe3337bcfa14f000074d2dae7058118193ea6/ExcelOutput/QuestData.json) · [RewardData](https://github.com/DimbreathBot/TurnBasedGameData/blob/dfdfe3337bcfa14f000074d2dae7058118193ea6/ExcelOutput/RewardData.json) · [FinishWay](https://github.com/DimbreathBot/TurnBasedGameData/blob/dfdfe3337bcfa14f000074d2dae7058118193ea6/ExcelOutput/FinishWay.json) | auditable order and reward cross-check for the 43 additions in 4.7; inherited choice-group cross-check · 4.7 新增 43 条记录的可审计排序与奖励核对；既有互斥组核对 |
 
 The dated JSON snapshots are retained unmodified as primary evidence; CSV
 duplicates would add format, not information.
@@ -91,7 +99,7 @@ not HoYoverse publications. The working Chinese checklist is not redistributed,
 so the 4.4 Chinese workbook is a release artifact rather than a fully
 reproducible build surface. Existing rows retain its category order and
 first-obtainable `Version` convention; a small number of values therefore
-postdate StarDB's introduction version. With no equivalent 4.5 or 4.6 checklist,
+postdate StarDB's introduction version. With no equivalent 4.5, 4.6, or 4.7 checklist,
 additions in these versions retain the existing category blocks and follow
 AchievementData Priority descending within each category, equivalent here to
 ID ascending.
@@ -99,7 +107,7 @@ ID ascending.
 StarDB、StarRailRes 与 TurnBasedGameData 均为第三方社区来源，并非 HoYoverse
 官方发布。整理前中文清单不随仓库分发，因此 4.4 中文工作簿是发布工件，而非可由
 本仓库完整重建的数据集。既有条目保留其分类顺序与首次可获取版本口径，少量版本值
-因此晚于 StarDB 记录的加入版本。因无对应的 4.5 与 4.6 中文清单，这两个版本的新增
+因此晚于 StarDB 记录的加入版本。因无对应的 4.5、4.6 与 4.7 中文清单，这三个版本的新增
 记录沿用既有分类块，并在各分类内按 AchievementData 的 Priority 降序排列（本次等同于 ID 升序）。
 
 ---
@@ -129,6 +137,20 @@ removes two countable rows and 10 Stellar Jade, producing 1,885 rows and
 ID 4055507–4055509 合并为一组三选一结果。29 条新增记录增加 170 星琼；
 合并三条既有记录减少 2 个可计数行与 10 星琼，工作簿总计为 1,885 行、
 11,155 星琼。原 4.5 工作簿不变。
+
+---
+
+## New in 4.7 | 4.7 新增
+
+The 43 additions add 275 Stellar Jade, matching client reward data. The 51
+inherited mutually exclusive groups remain unchanged, producing 1,928 countable
+rows and 11,430 Stellar Jade. In the 4.7 English workbook, the condition for
+ID 4035503 is corrected from 20 billion to 2 billion, cross-checked against
+StarRailRes EN. Earlier workbooks remain unchanged.
+
+43 条新增记录增加 275 星琼，与客户端奖励数据一致。既有 51 个互斥组保持不变，
+工作簿总计为 1,928 个可计数行、11,430 星琼。4.7 英文工作簿同时将 ID 4035503
+的条件由 20 billion 修正为 2 billion，经 StarRailRes 英文数据核对。旧版本工作簿不变。
 
 ---
 
